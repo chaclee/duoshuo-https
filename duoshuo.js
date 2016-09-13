@@ -470,7 +470,7 @@
                         e.avatar_url = e.avatar_url.replace(/himg\.bdimg\.com/, "nzriuc44h.qnssl.com");
                         e.avatar_url = e.avatar_url.replace(/ds\.cdncache\.org/, "nzrisok3d.qnssl.com");
                         e.avatar_url = e.avatar_url.replace(/img\.kaixin001\.com\.cn/, "nzrktdox3.qnssl.com");
-                        e.avatar_url = e.avatar_url.replace(/img\d+\.douban\.com/, "img2.doubanio.com");
+                        e.avatar_url = e.avatar_url.replace(/img\d+\.douban\.com/, "img1.doubanio.com");
                         e.avatar_url = e.avatar_url.replace(/app\.qlogo\.cn/, "nzvcelvwu.qnssl.com");
                         e.avatar_url = e.avatar_url.replace(/wx\.qlogo\.cn/, "nzwsf9aei.qnssl.com");
                         e.avatar_url = e.avatar_url.replace(/tp\d+\.sinaimg\.cn/, "nzqv0a582.qnssl.com");
