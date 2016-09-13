@@ -28,5 +28,5 @@ http://wx.qlogo.cn/ => nzwsf9aei.qnssl.com
 
 http://hdn.xnimg.cn/ => nzrj4etbg.qnssl.com
 
-http://tp1.sinaimg.cn/ => nzqv0a582.qnssl.com
+http://img.t.sinajs.cn/ => nzqv0a582.qnssl.com
 
