@@ -30,3 +30,5 @@ http://hdn.xnimg.cn/ => nzrj4etbg.qnssl.com
 
 http://img.t.sinajs.cn/ => nznlz6ohs.qnssl.com
 
+http://tp4.sinaimg.cn/ => odfhb4m72.qnssl.com
+
