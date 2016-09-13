@@ -473,8 +473,8 @@
                         e.avatar_url = e.avatar_url.replace(/img\d+\.douban\.com/, "img1.doubanio.com");
                         e.avatar_url = e.avatar_url.replace(/app\.qlogo\.cn/, "nzvcelvwu.qnssl.com");
                         e.avatar_url = e.avatar_url.replace(/wx\.qlogo\.cn/, "nzwsf9aei.qnssl.com");
-                        e.avatar_url = e.avatar_url.replace(/tp\d+\.sinaimg\.cn/, "nzqv0a582.qnssl.com");
-                        e.avatar_url = e.avatar_url.replace('img.t.sinajs.cn', "nzqv0a582.qnssl.com");
+                        e.avatar_url = e.avatar_url.replace(/tp\d+\.sinaimg\.cn/, "odfhb4m72.qnssl.com");
+                        e.avatar_url = e.avatar_url.replace('img.t.sinajs.cn', "nznlz6ohs.qnssl.com");
                         e.avatar_url = e.avatar_url.replace('0.gravatar.com/avatar', "cdn.v2ex.com/gravatar");
                     } else {
                         rt.data.default_avatar_url = rt.data.default_avatar_url.replace(/^http\:\/\//, "https://");
@@ -531,6 +531,8 @@
             return t
         }, et.ctxPost = function (e) {
             var t = "";
+            e.post.message = e.post.message.replace(/src=(["|'])http:\/\//g, "src=$1//nznlz6ohs.qnssl.com/");
+            e.post.message = e.post.message.replace('img.t.sinajs.cn/', '');
             return e.post && (t += '<li class="ds-ctx-entry"', e.hidden && (t += ' style="display:none"'), t += ' data-post-id="' + e.post.post_id + '"><div class="ds-avatar">' + et.avatar(e.post.theAuthor || e.post.author) + '</div><div class="ds-ctx-body"><div class="ds-ctx-head">' + et.userAnchor(e.post.theAuthor || e.post.author) + et.timeAnchor(e.post.created_at, e.post.url), e.index >= 0 && (t += '<div class="ds-ctx-nth" title="' + S.fullTime(e.post.created_at) + '">' + (e.index + 1) + z.floor + "</div>"), t += '</div><div class="ds-ctx-content">' + e.post.message, e.index >= 0 && (t += '　　　　　　　<div class="ds-comment-actions', e.post.vote > 0 && (t += " ds-post-liked"), t += '">' + et.likePost(e.post) + '<a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>' + z.repost + '</a><a class="ds-post-reply" href="javascript:void(0);"><span class="ds-icon ds-icon-reply"></span>' + z.reply + "</a></div>"), t += "</div></div></li>"), t
         }, et["dialog-anonymous"] = function (e) {
             var t = '<h2>社交帐号登录</h2><div class="ds-icons-32">', s = e.services;
@@ -1218,6 +1220,7 @@
                         var i = 0 === e.indexOf("微博") ? "http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/" + s.replace("_org", "_thumb") : S.STATIC_URL + "/images/smilies/" + s;
                         if (document.location.protocol == 'https:') {
                             i = i.replace("http://", "//nznlz6ohs.qnssl.com/");
+                            i = i.replace("http://img.t.sinajs.cn/", "//nznlz6ohs.qnssl.com/");
                         }
                         i = i.replace("_org.gif", "_thumb.gif");
                         "WordPress" === e && (t = " " + t + " "), a += '<li><img src="' + i + '" title="' + _(t) + '" /></li>'
